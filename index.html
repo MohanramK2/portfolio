@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohanram K – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ───── Navigation ───── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">MK</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ───── Hero Section ───── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-inner">
+      <!-- Left: Text -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Available for Opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="name-first">Mohanram</span>
+          <span class="name-last">K</span>
+        </h1>
+        <div class="hero-typewriter">
+          <span class="tw-prefix">I am a </span>
+          <span class="tw-text" id="typewriter"></span>
+          <span class="tw-cursor">|</span>
+        </div>
+        <p class="hero-tagline">
+          Motivated AIML student passionate about building intelligent systems
+          and exploring the frontiers of Artificial Intelligence.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:mohanramk02@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+919363540549" title="Phone"><i class="fas fa-phone"></i></a>
+          <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo-glow"></div>
+        <img src="photo.jpg" alt="Mohanram K" class="hero-photo" />
+        <div class="hero-photo-badge">
+          <i class="fas fa-brain"></i> AIML
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ───── About / Education ───── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <!-- Left: Objective -->
+        <div class="about-card glass-card" data-aos="fade-right">
+          <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Career Objective</h3>
+          <p>
+            Motivated and enthusiastic <strong>AIML student</strong> with a strong interest in
+            <strong>Python</strong>, <strong>Machine Learning</strong>, and
+            <strong>Artificial Intelligence</strong>. Eager to apply theoretical
+            knowledge to real-world problems and grow as a technology professional.
+          </p>
+          <div class="info-chips">
+            <span class="chip"><i class="fas fa-map-marker-alt"></i> Tirupattur, TN</span>
+            <span class="chip"><i class="fas fa-phone"></i> +91 93635 40549</span>
+            <span class="chip"><i class="fas fa-envelope"></i> mohanramk02@gmail.com</span>
+          </div>
+        </div>
+
+        <!-- Right: Education -->
+        <div class="about-card glass-card" data-aos="fade-left">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Education</h3>
+          <div class="edu-item">
+            <div class="edu-degree">B.Tech – Artificial Intelligence &amp; Machine Learning</div>
+            <div class="edu-meta">
+              <span class="edu-year"><i class="fas fa-calendar"></i> 2025 – 2029</span>
+              <span class="edu-cgpa"><i class="fas fa-star"></i> CGPA: 8.1 / 10</span>
+            </div>
+            <div class="edu-bar">
+              <div class="edu-bar-fill" style="width: 81%"></div>
+            </div>
+          </div>
+          <div class="edu-tags">
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">IoT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Skills ───── -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-aos="fade-up" data-delay="0">
+          <div class="skill-icon" style="--clr:#A8DADC">
+            <i class="fas fa-code"></i>
+          </div>
+          <h4>C Programming</h4>
+          <p>Fundamentals, pointers, memory management, data structures</p>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="78%"></div>
+          </div>
+          <span class="skill-percent">78%</span>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-delay="100">
+          <div class="skill-icon" style="--clr:#FFD166">
+            <i class="fab fa-python"></i>
+          </div>
+          <h4>Python Programming</h4>
+          <p>OOP, scripting, automation, data manipulation with libraries</p>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="82%"></div>
+          </div>
+          <span class="skill-percent">82%</span>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-delay="200">
+          <div class="skill-icon" style="--clr:#06D6A0">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h4>Machine Learning</h4>
+          <p>Supervised learning, model evaluation, feature engineering</p>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="70%"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-delay="300">
+          <div class="skill-icon" style="--clr:#EF476F">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h4>IoT / ESP32</h4>
+          <p>Sensor integration, embedded systems, hardware prototyping</p>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="72%"></div>
+          </div>
+          <span class="skill-percent">72%</span>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-delay="400">
+          <div class="skill-icon" style="--clr:#118AB2">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h4>Web Development</h4>
+          <p>HTML, CSS, JavaScript — responsive design & UI/UX basics</p>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="75%"></div>
+          </div>
+          <span class="skill-percent">75%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Projects ───── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card" data-aos="zoom-in">
+          <div class="project-header">
+            <div class="project-icon iot">
+              <i class="fas fa-water"></i>
+            </div>
+            <div class="project-badges">
+              <span class="badge-label iot-label">IoT</span>
+            </div>
+          </div>
+          <h3 class="project-title">Water Level Detection System</h3>
+          <p class="project-sub">using ESP32 &amp; Ultrasonic Sensor</p>
+          <ul class="project-points">
+            <li><i class="fas fa-check-circle"></i> Smart water level monitoring system using ultrasonic sensor and ESP32.</li>
+            <li><i class="fas fa-check-circle"></i> LED indication for 25%, 50%, and 75% water levels.</li>
+            <li><i class="fas fa-check-circle"></i> Real-time embedded feedback without external server dependency.</li>
+          </ul>
+          <div class="project-tech">
+            <span>ESP32</span><span>Ultrasonic Sensor</span><span>C/C++</span><span>IoT</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card" data-aos="zoom-in" data-delay="150">
+          <div class="project-header">
+            <div class="project-icon web">
+              <i class="fas fa-vote-yea"></i>
+            </div>
+            <div class="project-badges">
+              <span class="badge-label web-label">Web</span>
+            </div>
+          </div>
+          <h3 class="project-title">Election Pulse</h3>
+          <p class="project-sub">Responsive Election Web Application</p>
+          <ul class="project-points">
+            <li><i class="fas fa-check-circle"></i> Developed a responsive web application for election data.</li>
+            <li><i class="fas fa-check-circle"></i> Built with HTML, CSS, and vanilla JavaScript.</li>
+            <li><i class="fas fa-check-circle"></i> Clean UI/UX with mobile-first design principles.</li>
+          </ul>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Certifications ───── -->
+  <section class="section section-dark" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Certifications</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card" data-aos="flip-left">
+          <div class="cert-logo">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="cert-body">
+            <h4>C Programming</h4>
+            <p>Infosys Springboard</p>
+            <span class="cert-status verified"><i class="fas fa-check-circle"></i> Certified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card" data-aos="flip-left" data-delay="150">
+          <div class="cert-logo">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="cert-body">
+            <h4>Python Programming</h4>
+            <p>Infosys Springboard</p>
+            <span class="cert-status verified"><i class="fas fa-check-circle"></i> Certified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="languages-section" data-aos="fade-up">
+        <h3><i class="fas fa-language"></i> Languages Known</h3>
+        <div class="lang-chips">
+          <div class="lang-chip">
+            <span class="lang-flag">🇮🇳</span>
+            <span>Tamil</span>
+            <span class="lang-level">Native</span>
+          </div>
+          <div class="lang-chip">
+            <span class="lang-flag">🇬🇧</span>
+            <span>English</span>
+            <span class="lang-level">Proficient</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Contact ───── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info glass-card" data-aos="fade-right">
+          <h3>Let's Connect!</h3>
+          <p>I'm always open to discussing new opportunities, collaborations, or just a friendly chat about AI & technology.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <small>Email</small>
+                <a href="mailto:mohanramk02@gmail.com">mohanramk02@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <small>Phone</small>
+                <a href="tel:+919363540549">+91 93635 40549</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <small>Location</small>
+                <span>Tirupattur District, Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Declaration -->
+        <div class="declaration glass-card" data-aos="fade-left">
+          <div class="decl-icon"><i class="fas fa-file-signature"></i></div>
+          <h3>Declaration</h3>
+          <p>
+            I hereby declare that the above information furnished is true and
+            correct to the best of my knowledge and belief.
+          </p>
+          <div class="decl-footer">
+            <span><i class="fas fa-map-marker-alt"></i> Tirupattur District, Tamil Nadu</span>
+            <span class="decl-name">Mohanram K</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── Footer ───── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Designed &amp; Built by <strong>Mohanram K</strong></span>
+      <span>© 2025 — All rights reserved</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
